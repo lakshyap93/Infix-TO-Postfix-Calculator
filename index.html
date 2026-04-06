@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Postfix Converter</title>
+    <meta name="description"
+        content="A powerful and aesthetic tool to convert Infix expressions to Postfix expressions with step-by-step table visualization.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </div>
+        </label>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Infix to Postfix Logo" id="app-logo">
+            </div>
+            <h1>Infix to Postfix <span class="highlight">Converter</span></h1>
+            <p class="subtitle">Convert mathematical expressions with step-by-step visualization.</p>
+        </header>
+
+        <main>
+            <div class="input-section glass-panel">
+                <div class="input-group">
+                    <label for="infix-expression">Enter Infix Expression</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="infix-expression" placeholder="e.g., A+B*C or (A+B)*C"
+                            autocomplete="off">
+                        <button id="convert-btn" class="primary-btn">
+                            <span>Convert</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="error-msg" id="error-msg"></div>
+                </div>
+            </div>
+
+            <div class="result-section glass-panel hidden" id="result-section">
+                <h2>Resulting Postfix</h2>
+                <div class="final-result" id="final-postfix"></div>
+
+                <h3>Step-by-Step Conversion</h3>
+                <div class="table-container">
+                    <table id="conversion-table">
+                        <thead>
+                            <tr>
+                                <th>Scan Symbol</th>
+                                <th>Stack</th>
+                                <th>Postfix Expression</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows injected via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2026 CC Developed And Created By <strong>Lakshya Purohit</strong></p>
+                <a href="https://github.com/lakshyap93" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
