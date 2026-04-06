@@ -24,11 +24,6 @@ This project uses the **Stack Data Structure** and operator precedence rules:
 
 ---
 
-## 📸 Preview
-
-(Add screenshot here later)
-
----
 
 ## 🛠️ Tech Stack
 
