@@ -53,7 +53,7 @@ This project uses the **Stack Data Structure** and operator precedence rules:
 
 ## 🌐 Live Demo
 
-(Add GitHub Pages link here after deployment)
+https://lakshyap93.github.io/Infix-TO-Postfix-Calculator/
 
 ---
 
